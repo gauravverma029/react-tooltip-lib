@@ -1,13 +1,18 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
-import ExampleComponent from 'react-tooltip-lib'
+import Tooltip from "react-tooltip-lib";
 
+const TestComponent = function() {
+  return <div>Hello ToolTip</div>;
+};
 export default class App extends Component {
-  render () {
+  render() {
+    const props = this.props;
+
     return (
-      <div>
-        <ExampleComponent text='Modern React component module' />
+      <div style={{ position: "absolute", top: "10%", left: "50%" }}>
+        <Tooltip {...props} />
       </div>
-    )
+    );
   }
 }

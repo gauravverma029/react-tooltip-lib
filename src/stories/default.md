@@ -1,22 +1,9 @@
 # React Tooltip Lib
 
-A simple UI library for light-weight, highly customizable React Tooltip.
-Very Easy to use and integrate.
-
-## Installation
-
-To start with `react-tooltip-lib` install:
-
-```
-yarn add react-tooltip-lib
-// or
-npm install --save react-tooltip-lib
-```
-
-### Usage
+### :smile: Usage
 
 ```js
-import Tooltip from "react-tooltip-lib";
+import Tooltip from 'react-tooltip-lib';
 ```
 
 ### Example 1.
@@ -26,11 +13,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Tooltip
-          placement="bottom"
-          isActive={true}
-          tipContent="This is React Tooltip library"
-        />
+        <Tooltip placement="bottom" isActive={true} tipContent="This is React Tooltip library" />
       </div>
     );
   }
@@ -49,11 +32,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Tooltip
-          placement="bottom"
-          isActive={true}
-          tipContent={DesignedContentComponent}
-        />
+        <Tooltip placement="bottom" isActive={true} tipContent={DesignedContentComponent} />
       </div>
     );
   }
@@ -64,7 +43,7 @@ export default class App extends Component {
 
 ```js
 // Your Custom Icon. onClick or onHover you want to open Tooltip Content.By default icon is hint icons
-import { ReactComponent as InformationIcon } from "../../icons/information.svg";
+import { ReactComponent as InformationIcon } from '../../icons/information.svg';
 
 // Your designed Component you can export from anywhere
 const DesignedContentComponent = function() {
@@ -75,11 +54,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Tooltip
-          placement="bottom"
-          isActive={true}
-          tipContent={DesignedContentComponent}
-        >
+        <Tooltip placement="bottom" isActive={true} tipContent={DesignedContentComponent}>
           <InformationIcon />
         </Tooltip>
       </div>
@@ -87,6 +62,8 @@ export default class App extends Component {
   }
 }
 ```
+
+<!-- STORY -->
 
 ### Properties
 
@@ -107,16 +84,14 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Tooltip
-          isActive={true}
-          tipTitle="This is React Tooltip library"
-          theme="default"
-        />
+        <Tooltip isActive={true} tipTitle="This is React Tooltip library" theme="default" />
       </div>
     );
   }
 }
 ```
+
+<!-- STORY -->
 
 ### Properties
 
@@ -135,11 +110,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Tooltip
-          isActive={true}
-          tipTitle="This is React Tooltip library"
-          trigger="onHover"
-        />
+        <Tooltip isActive={true} tipTitle="This is React Tooltip library" trigger="onHover" />
       </div>
     );
   }
@@ -153,16 +124,14 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Tooltip
-          isActive={true}
-          tipTitle="This is React Tooltip library"
-          trigger="onHover"
-        />
+        <Tooltip isActive={true} tipTitle="This is React Tooltip library" trigger="onHover" />
       </div>
     );
   }
 }
 ```
+
+<!-- STORY -->
 
 ### Properties
 
@@ -188,6 +157,8 @@ export default class App extends Component {
 }
 ```
 
+<!-- STORY -->
+
 ### Properties
 
 - `placement` - By Default value is `auto` .This value is string.
@@ -205,15 +176,14 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Tooltip
-          tipContentWidth="50px"
-          tipTitle="This is React Tooltip library"
-        />
+        <Tooltip tipContentWidth="50px" tipTitle="This is React Tooltip library" />
       </div>
     );
   }
 }
 ```
+
+<!-- STORY -->
 
 ### Properties
 
@@ -239,7 +209,3 @@ export default class App extends Component {
 | iconSize          | String   | 16px         | css Properties  |
 | color             | String   | Hex color    | css Properties  |
 | bg                | String   | Hex color    | css Properties  |
-
-## License
-
-MIT © [gauravverma029](https://github.com/gauravverma029)

@@ -1,22 +1,12 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import React, { Component } from 'react';
 
-import styles from './styles.css'
+import Basic from './component/Basic';
 
-export default class ExampleComponent extends Component {
-  static propTypes = {
-    text: PropTypes.string
-  }
-
+class Tooltip extends Component {
   render() {
-    const {
-      text
-    } = this.props
-
-    return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
-    )
+    const { ...props } = this.props;
+    return <Basic {...props} />;
   }
 }
+
+export default Tooltip;
