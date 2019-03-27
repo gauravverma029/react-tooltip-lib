@@ -28,7 +28,7 @@ export default class App extends Component {
       <div>
         <Tooltip
           placement="bottom"
-          isActive={true}
+          initialVisibility="show"
           tipContent="This is React Tooltip library"
         />
       </div>
@@ -51,7 +51,7 @@ export default class App extends Component {
       <div>
         <Tooltip
           placement="bottom"
-          isActive={true}
+          initialVisibility="show"
           tipContent={DesignedContentComponent}
         />
       </div>
@@ -77,7 +77,7 @@ export default class App extends Component {
       <div>
         <Tooltip
           placement="bottom"
-          isActive={true}
+          initialVisibility="show"
           tipContent={DesignedContentComponent}
         >
           <InformationIcon />
@@ -108,7 +108,7 @@ export default class App extends Component {
     return (
       <div>
         <Tooltip
-          isActive={true}
+          initialVisibility="show"
           tipTitle="This is React Tooltip library"
           theme="default"
         />
@@ -136,7 +136,7 @@ export default class App extends Component {
     return (
       <div>
         <Tooltip
-          isActive={true}
+          initialVisibility="show"
           tipTitle="This is React Tooltip library"
           trigger="onHover"
         />
@@ -154,7 +154,7 @@ export default class App extends Component {
     return (
       <div>
         <Tooltip
-          isActive={true}
+          initialVisibility="show"
           tipTitle="This is React Tooltip library"
           trigger="onHover"
         />
