@@ -90,13 +90,13 @@ export default class App extends Component {
 
 ### Properties
 
-- `initialValue` - ToolTip Content By Default Hide..
+- `initialVisibility` - ToolTip Content By Default Hide..
 - `tipContent` - Tiptool Content Pass as String or Pass and Designed Component
 
-| propName     | propType                            | defaultValue | isRequired |
-| ------------ | ----------------------------------- | ------------ | ---------- |
-| initialValue | String                              | hide         | -          |
-| tipContent   | String or Pass Functional Component | -            | yes        |
+| propName          | propType                            | defaultValue | isRequired |
+| ----------------- | ----------------------------------- | ------------ | ---------- |
+| initialVisibility | String                              | hide         | -          |
+| tipContent        | String or Pass Functional Component | -            | yes        |
 
 # Themes
 

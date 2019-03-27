@@ -13,7 +13,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Tooltip isActive={true} tipTitle="This is React Tooltip library" theme="default" />
+        <Tooltip initialVisibility="show" tipTitle="This is React Tooltip library" theme="default" />
       </div>
     );
   }

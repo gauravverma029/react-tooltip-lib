@@ -13,7 +13,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Tooltip placement="bottom" isActive={true} tipContent="This is React Tooltip library" />
+        <Tooltip placement="bottom" initialVisibility="show" tipContent="This is React Tooltip library" />
       </div>
     );
   }
@@ -32,7 +32,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Tooltip placement="bottom" isActive={true} tipContent={DesignedContentComponent} />
+        <Tooltip placement="bottom" initialVisibility="show" tipContent={DesignedContentComponent} />
       </div>
     );
   }
@@ -54,7 +54,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Tooltip placement="bottom" isActive={true} tipContent={DesignedContentComponent}>
+        <Tooltip placement="bottom" initialVisibility="show" tipContent={DesignedContentComponent}>
           <InformationIcon />
         </Tooltip>
       </div>
@@ -67,13 +67,13 @@ export default class App extends Component {
 
 ### Properties
 
-- `initialValue` - ToolTip Content By Default Hide..
+- `initialVisibility` - ToolTip Content By Default Hide..
 - `tipContent` - Tiptool Content Pass as String or Pass and Designed Component
 
-| propName     | propType                            | defaultValue | isRequired |
-| ------------ | ----------------------------------- | ------------ | ---------- |
-| initialValue | String                              | hide         | -          |
-| tipContent   | String or Pass Functional Component | -            | yes        |
+| propName          | propType                            | defaultValue | isRequired |
+| ----------------- | ----------------------------------- | ------------ | ---------- |
+| initialVisibility | String                              | hide         | -          |
+| tipContent        | String or Pass Functional Component | -            | yes        |
 
 # Themes
 
@@ -84,7 +84,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Tooltip isActive={true} tipTitle="This is React Tooltip library" theme="default" />
+        <Tooltip initialVisibility="show" tipTitle="This is React Tooltip library" theme="default" />
       </div>
     );
   }
@@ -110,7 +110,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Tooltip isActive={true} tipTitle="This is React Tooltip library" trigger="onHover" />
+        <Tooltip initialVisibility="show" tipTitle="This is React Tooltip library" trigger="onHover" />
       </div>
     );
   }
@@ -124,7 +124,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Tooltip isActive={true} tipTitle="This is React Tooltip library" trigger="onHover" />
+        <Tooltip initialVisibility="show" tipTitle="This is React Tooltip library" trigger="onHover" />
       </div>
     );
   }

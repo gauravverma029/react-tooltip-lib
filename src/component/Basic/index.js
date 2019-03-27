@@ -8,17 +8,16 @@ import ThemeDefaultProps from '../Theme';
 
 class Basic extends Component {
   state = {
-    initialValue: this.props.initialValue === 'show' ? true : false,
+    initialVisibility: this.props.initialVisibility === 'show' ? true : false,
   };
   childNode = React.createRef();
 
-  componentDidMount() {}
   handleClick = () => {
     const { trigger } = this.props;
-    const { initialValue } = this.state;
+    const { initialVisibility } = this.state;
     if (trigger === 'onClick') {
       this.setState({
-        initialValue: initialValue,
+        initialVisibility: !initialVisibility,
       });
     }
   };
@@ -26,7 +25,7 @@ class Basic extends Component {
   handleMouseLeave(trigger) {
     if (trigger === 'onHover') {
       this.setState({
-        initialValue: false,
+        initialVisibility: false,
       });
     }
   }
@@ -34,14 +33,14 @@ class Basic extends Component {
   handleMouseEnter(trigger) {
     if (trigger === 'onHover') {
       this.setState({
-        initialValue: true,
+        initialVisibility: true,
       });
     }
   }
 
   render() {
     const { theme, tipContentWidth, tipContentPadding, tipTextTransform, trigger, tipContent, placement, iconSize, ...props } = this.props;
-    const { initialValue } = this.state;
+    const { initialVisibility } = this.state;
     let tipContentProps = { ...props };
 
     if (theme !== 'custom') {
@@ -67,7 +66,7 @@ class Basic extends Component {
             </TargetContainer>
           )}
         </Target>
-        {initialValue && (
+        {initialVisibility && (
           <Portal>
             <Popper placement={placement}>
               {({ popperProps }) => (
@@ -99,7 +98,7 @@ Basic.defaultProps = {
   arrowSize: '4',
   placement: 'auto',
   iconSize: '16px',
-  initialValue: 'hide',
+  initialVisibility: 'hide',
 };
 
 export default Basic;
